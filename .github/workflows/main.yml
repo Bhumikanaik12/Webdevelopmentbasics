@@ -1,17 +1,18 @@
 name: Deploy Html from subfolder
 on:
   push:
-    branches:[main]
+    branches: [main]
 
 permissions:
   contents: write
 
-  jobs:
+jobs:
     deploy:
       runs-on: ubuntu-latest
       steps:
-      - users: actions/checkout@v3
-      -users: peaceiris/actions-gh-pages@v3
-      with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish_dir: ./module2-solution
+      - uses: actions/checkout@v3
+      
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./module2-solution
