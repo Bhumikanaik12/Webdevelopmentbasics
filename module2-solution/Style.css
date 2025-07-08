@@ -22,13 +22,16 @@ body{
 .bread .title{
   background-color: #f5a9a9;
   color: black;
+  float: right;
   
 }
 .sushi .title{
   background-color: #b43104;
   color: black;
+  float: right;
 }
 .pasta .title{
  background-color: #f3e2a9;
   color: black;
+  float: right;
 }
