@@ -1,3 +1,6 @@
+body{
+  background-color: pink;
+}
 .menu-item{
   width: 30%;
   float: left;
